@@ -1,107 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ultimate 10K Series</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#111;
+background:#000;
 color:white;
 }
 
 header{
 display:flex;
 justify-content:space-between;
-padding:20px;
-background:#000;
+align-items:center;
+padding:15px 20px;
+background:white;
+color:black;
+}
+
+.menu{
+font-size:24px;
+}
+
+.top-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.daftar{
+background:red;
+color:white;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
 }
 
 .hero{
-height:80vh;
+height:90vh;
+background:url("hero.jpg") center/cover no-repeat;
 display:flex;
-flex-direction:column;
 align-items:center;
 justify-content:center;
 text-align:center;
-background:linear-gradient(#1e3c72,#000);
 }
 
 .hero h1{
 font-size:40px;
 }
 
-button{
-background:red;
-color:white;
-padding:15px 30px;
-border:none;
-border-radius:10px;
-font-size:18px;
-}
-
-.section{
-padding:50px;
-text-align:center;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-}
-
-.card{
-background:#222;
-padding:40px;
-border-radius:15px;
-}
-
-footer{
-background:black;
-padding:40px;
-text-align:center;
-}
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-<div>☰</div>
-<div>ENG | ID</div>
-<div><button>DAFTAR</button></div>
+
+<div class="menu">☰</div>
+
+<div class="top-right">
+<span>ENG | ID</span>
+<a class="daftar" href="#">DAFTAR</a>
+</div>
+
 </header>
 
-<div class="hero">
-<h1>THE ULTIMATE 10K SERIES</h1>
-<p>Powered by bank bjb</p>
+<section class="hero">
+
+<div>
+<h1>THE ULTIMATE<br>10K SERIES</h1>
+<p>Indonesia Running Series</p>
 </div>
 
-<div class="section">
-<h2>LOMBA</h2>
-
-<div class="cards">
-
-<div class="card">Bandoeng 10K</div>
-<div class="card">Suroboyo 10K</div>
-<div class="card">Tangerang 10K</div>
-<div class="card">Semarang 10K</div>
-
-</div>
-</div>
-
-<footer>
-
-<p>Instagram: ultimate.10kseries</p>
-<p>Email: info@ultimate10kseries.com</p>
-
-</footer>
+</section>
 
 </body>
 </html>
